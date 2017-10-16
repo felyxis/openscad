@@ -12,4 +12,4 @@ module pahar_plastic(inaltime_pahar, raza_baza_pahar, raza_sus_pahar, raza_buza,
 }
 
 
-pahar_plastic(60, 15, 30, 32, 2, 1);
+pahar_plastic(inaltime_pahar=60, raza_baza_pahar=15, raza_sus_pahar=30, raza_buza=32, inaltime_buza=2, grosime_perete=1);
