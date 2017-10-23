@@ -15,7 +15,7 @@ cylinder ( h=grosime, r= diametru/2);
   module felie_pizza_difference( diametru, grosime, unghi_felie)
 
 {
- difference() {   
+ intersection() {   
 cylinder ( h=grosime, r= diametru/2); 
      translate([-diametru/2-toleranta, 0, -toleranta])
      cube([diametru+2*toleranta, diametru/2+toleranta, grosime+2*toleranta]);
