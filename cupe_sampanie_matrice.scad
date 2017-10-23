@@ -46,7 +46,7 @@ for(j=[0:numar_pahare_y-1])
     }
     
     
-pahare_matrice(10,5);
+pahare_matrice(10,3);
 
 
 
