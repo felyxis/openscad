@@ -37,7 +37,7 @@ module juma_sfere_mici(inaltime_sfr,raze_sfr,raza_clndr)
     difference()
     {
         sfere_mici(inaltime_sfere=inaltime_sfr, raze_sfere=raze_sfr);
-        translate([0, 0, inaltime_sfr]) cylinder(h=raze_sfr, r=raza_clndr, $fn=20); 
+        translate([0, 0, inaltime_sfr]) cylinder(h=raze_sfr, r=raza_clndr, $fn=80); 
         }
 }
 
