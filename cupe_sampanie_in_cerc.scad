@@ -50,8 +50,8 @@ for(j=[0:numar_pahare_y-1])
     //----------------------
     module pahar_pe_cerc(nr_pahare, raza_cerc)
     {
-        for(i=[0:nr_pahare-1])
-            rotate([0,0,360/nr_pahare*i])
+        for(i=[0:360/nr_pahare:360-1])
+            rotate([0,0,i])
     translate([raza_cerc,0,0])
     pahar_sampanie(raza_baza=40,grosime_baza=3,raza_picior=2,inaltime_picior=100,raza_cupa=50,            grosime_perete_cupa=2);
     }
