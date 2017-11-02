@@ -7,7 +7,7 @@ translate([0,0,inaltime_cub])cube(lungime_cub, center=true);
 translate ([0,0,inaltime_sfera])sphere(raza_sfera,$fn=90);      
     }
 }
-module cilindrul(grosime_cilindru,raza_cilindru,inaltime_cilindru)
+module capac_rasnita(grosime_cilindru,raza_cilindru,inaltime_cilindru)
    color("Brown")
         translate([0, 0, inaltime_cilindru]) cylinder(h=grosime_cilindru,r= raza_cilindru, $fn=80);
 
@@ -32,7 +32,7 @@ sphere(raze_sfere, $fn=50);
 sphere(raze_sfere, $fn=50);
 }
 
-module juma_sfere_mici(inaltime_sfr,raze_sfr,raza_clndr)
+module gauri_rasnita(inaltime_sfr,raze_sfr,raza_clndr)
 {
     difference()
     {
@@ -45,10 +45,10 @@ difference(){
     
     rotate([0,0,180])
     
-cilindrul(grosime_cilindru=4, raza_cilindru=10,inaltime_cilindru=20);
-translate([0,0,0.1])juma_sfere_mici(inaltime_sfr=24,raze_sfr=1,raza_clndr=10);
+capac_rasnita(grosime_cilindru=4, raza_cilindru=10,inaltime_cilindru=20);
+translate([0,0,0.1])gauri_rasnita(inaltime_sfr=24,raze_sfr=1,raza_clndr=10);
 }
 
 corp_rasnita(inaltime_cub=10,lungime_cub=20,inaltime_sfera=10,raza_sfera=15);
 
-juma_sfere_mici(inaltime_sfr=24,raze_sfr=1,raza_clndr=10);
+gauri_rasnita(inaltime_sfr=24,raze_sfr=1,raza_clndr=10);
