@@ -1,5 +1,6 @@
 module corp_rasnita(inaltime_cub,lungime_cub,inaltime_sfera,raza_sfera)
 
+rotate([0,0,45])   
 color("MediumSpringGreen")
 difference(){ 
 intersection(){
@@ -42,8 +43,7 @@ module gauri_rasnita(inaltime_sfr,raze_sfr,raza_clndr)
 }
 
 difference(){
-    
-    rotate([0,0,180])
+rotate([0,0,90])
     
 capac_rasnita(grosime_cilindru=4, raza_cilindru=10,inaltime_cilindru=20);
 translate([0,0,0.1])gauri_rasnita(inaltime_sfr=24,raze_sfr=1,raza_clndr=10);
